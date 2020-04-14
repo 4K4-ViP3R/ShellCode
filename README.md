@@ -16,3 +16,22 @@ int main()
 
 The above standard C code will spawn a shell. Using a proper editor you can compile and run it very easily. The main point of this remote shell gaining process using shellcode is that if the target program is running in the system with some level of privileges, the newly popped the remote shell has the same privileges. It can be low level or high level privileges.
 
+The below code is compiled version of the above shellcode
+
+.LC0:
+        .string "/bin/sh"
+main:
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+        mov     QWORD PTR [rbp-16], OFFSET FLAT:.LC0
+        mov     QWORD PTR [rbp-8], 0
+        lea     rax, [rbp-16]
+        mov     edx, 0
+        mov     rsi, rax
+        mov     edi, OFFSET FLAT:.LC0
+        call    execve
+        mov     eax, 0
+        leave
+        ret
+	
