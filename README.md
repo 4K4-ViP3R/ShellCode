@@ -8,6 +8,7 @@ Attackers could use that remote shell to access and more interaction with the vi
 It is very simple. Using several lines of code, we can gain the new remote shell from the victim's machine. 
 Spawning new remote shell is a very lightweight process and very efficient.
 
+```javascript
 #include <stdio.h>
 #include <unistd.h>
 int main()
@@ -18,7 +19,7 @@ int main()
 	execve("/bin/sh", args, NULL);
 	return 0;
 }
-
+```
 The above standard C code will spawn a shell. Using a proper editor, you can compile and run it very easily. The main point 
 of this remote shell gaining process using shellcode is that if the target program is running in the system with 
 some level of privileges, the newly popped the remote shell has the same privileges. 
