@@ -45,26 +45,25 @@ main:
 
 Below I briefly explain how to convert C language source code into executable. Try it using your terminal.
 
-# STEP 01 - Pre-processing
+## STEP 01 - Pre-processing
 
 Pre-processing is mandatory if you use C or C++ source code. because it helps to handle all '#' directives.
 Command:
 •	cc -E -o yourScriptName.pp.c yourScriptName.c
 
-# STEP 02 - Compilation
+## STEP 02 - Compilation
 
 This helps to convert high level language into the specific set of instructions.
 Command:
 •	gcc -S yourScriptName.c
 
-# STEP 03 - Assembler
+## STEP 03 - Assembler
 
 This helps to convert assembly to binary.
 Command:
 •	gcc -c yourScriptName.c --> (Produce yourScriptName.o file)
 
-# STEP 04 - Create executable file
+## STEP 04 - Create executable file
 
 Command:
 •	gcc -o yourFileName yourScriptName.o
-
