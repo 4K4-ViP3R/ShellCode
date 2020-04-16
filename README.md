@@ -55,15 +55,15 @@ Command:
 
 This helps to convert high level language into the specific set of instructions.
 Command:
-•	gcc -S yourScriptName.c
+- gcc -S yourScriptName.c
 
 ## STEP 03 - Assembler
 
 This helps to convert assembly to binary.
 Command:
-•	gcc -c yourScriptName.c --> (Produce yourScriptName.o file)
+- gcc -c yourScriptName.c --> (Produce yourScriptName.o file)
 
 ## STEP 04 - Create executable file
 
 Command:
-•	gcc -o yourFileName yourScriptName.o
+- gcc -o yourFileName yourScriptName.o
