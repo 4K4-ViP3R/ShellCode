@@ -53,13 +53,13 @@ Command:
 
 ## STEP 02 - Compilation
 
-This helps to convert high level language into the specific set of instructions.
+This helps to convert high level language into the specific set of instructions.<br/>
 Command:
 - gcc -S yourScriptName.c
 
 ## STEP 03 - Assembler
 
-This helps to convert assembly to binary.
+This helps to convert assembly to binary.<br/>
 Command:
 - gcc -c yourScriptName.c --> (Produce yourScriptName.o file)
 
