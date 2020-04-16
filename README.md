@@ -61,8 +61,6 @@ This helps to convert high level language into the specific set of instructions.
 Command:
 - gcc -S yourScriptName.c
 
-<img src="ShellCode/Images/SSthree.png" >
-
 ### STEP 03 - Assembler
 
 This helps to convert assembly to binary.<br/>
