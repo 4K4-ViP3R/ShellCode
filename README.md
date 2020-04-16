@@ -53,6 +53,7 @@ Pre-processing is mandatory if you use C or C++ source code. because it helps to
 Command:
 - cc -E -o yourScriptName.pp.c yourScriptName.c
 <img src="images/SS%202.png">
+![](images/SS%202.png)
 
 ### STEP 02 - Compilation
 
