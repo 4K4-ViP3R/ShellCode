@@ -27,6 +27,7 @@ It can be low level or high-level privileges.
 
 The below code is compiled version of the above shellcode
 
+```javascript
 .LC0:
         .string "/bin/sh"
 main:
@@ -43,7 +44,7 @@ main:
         mov     eax, 0
         leave
         ret
-
+```
 Below I briefly explain how to convert C language source code into executable. Try it using your terminal.
 
 ## STEP 01 - Pre-processing
