@@ -9,6 +9,7 @@ It is very simple. Using several lines of code, we can gain the new remote shell
 Spawning new remote shell is a very lightweight process and very efficient.
 
 #include <stdio.h>
+#include <unistd.h>
 int main()
 {
 	char *args[2];
