@@ -34,4 +34,26 @@ main:
         mov     eax, 0
         leave
         ret
-	
+
+Below I briefly explain how to convert C language source code into executable.
+
+STEP 01 - Pre-processing
+
+Pre-processing is mandatory if you use C or C++ source code. because it helps to handle all '#' directives.
+cc -E -o yourScriptName.pp.c yourScriptName.c
+
+STEP 02 - Compilation
+
+This helps to convert high level language into the specific set of instructions.
+
+gcc -S yourScriptName.c
+
+STEP 03 - Assembler
+
+This helps to convert assembly to binary
+
+gcc -c yourScriptName.c --> (Produce yourScriptName.o file)
+
+STEP 04 - Create executable file
+
+gcc -o yourFileName yourScriptName.o
