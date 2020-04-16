@@ -49,7 +49,7 @@ Below I briefly explain how to convert C language source code into executable. T
 
 Pre-processing is mandatory if you use C or C++ source code. because it helps to handle all '#' directives.
 Command:
-	- cc -E -o yourScriptName.pp.c yourScriptName.c
+- cc -E -o yourScriptName.pp.c yourScriptName.c
 
 ## STEP 02 - Compilation
 
