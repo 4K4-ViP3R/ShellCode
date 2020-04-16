@@ -61,7 +61,7 @@ This helps to convert high level language into the specific set of instructions.
 Command:
 - gcc -S yourScriptName.c
 
-![SSthree](images/SSthree.png)
+![SSthree](ShellCode/Images/SSthree.png)
 
 ### STEP 03 - Assembler
 
