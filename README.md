@@ -1,8 +1,8 @@
-# ShellCode
+ShellCode
 
 What is ShellCode?
 
-There are no any similarity between shellcode and shell scripting. Then why shellcode? Shellcode is an instance of a command line interpreter that use to exploit existing vulnerabilities in the target system or a program to get remote shell. Attackers could use that remote shell to access and more interaction with the victim's system (Target System). It is very simple. Using several lines of code we can gain the new remote shell from the victim's machine. Spawning new remote shell is a very lightweight process and very efficient.
+There is no any similarity between shellcode and shell scripting. Then why shellcode? Shellcode is an instance of a command line interpreter that use to exploit existing vulnerabilities in the target system or a program to get remote shell. Attackers could use that remote shell to access and more interaction with the victim's system (Target System). It is very simple. Using several lines of code, we can gain the new remote shell from the victim's machine. Spawning new remote shell is a very lightweight process and very efficient.
 
 #include <stdio.h>
 int main()
@@ -14,7 +14,7 @@ int main()
 	return 0;
 }
 
-The above standard C code will spawn a shell. Using a proper editor you can compile and run it very easily. The main point of this remote shell gaining process using shellcode is that if the target program is running in the system with some level of privileges, the newly popped the remote shell has the same privileges. It can be low level or high level privileges.
+The above standard C code will spawn a shell. Using a proper editor, you can compile and run it very easily. The main point of this remote shell gaining process using shellcode is that if the target program is running in the system with some level of privileges, the newly popped the remote shell has the same privileges. It can be low level or high-level privileges.
 
 The below code is compiled version of the above shellcode
 
@@ -35,25 +35,28 @@ main:
         leave
         ret
 
-Below I briefly explain how to convert C language source code into executable.
+Below I briefly explain how to convert C language source code into executable. Try it using your terminal.
 
 STEP 01 - Pre-processing
 
 Pre-processing is mandatory if you use C or C++ source code. because it helps to handle all '#' directives.
-cc -E -o yourScriptName.pp.c yourScriptName.c
+Command:
+•	cc -E -o yourScriptName.pp.c yourScriptName.c
 
 STEP 02 - Compilation
 
 This helps to convert high level language into the specific set of instructions.
-
-gcc -S yourScriptName.c
+Command:
+•	gcc -S yourScriptName.c
 
 STEP 03 - Assembler
 
-This helps to convert assembly to binary
-
-gcc -c yourScriptName.c --> (Produce yourScriptName.o file)
+This helps to convert assembly to binary.
+Command:
+•	gcc -c yourScriptName.c --> (Produce yourScriptName.o file)
 
 STEP 04 - Create executable file
 
-gcc -o yourFileName yourScriptName.o
+Command:
+•	gcc -o yourFileName yourScriptName.o
+
