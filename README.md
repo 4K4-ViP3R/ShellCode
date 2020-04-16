@@ -52,8 +52,8 @@ Below I briefly explain how to convert C language source code into executable. T
 Pre-processing is mandatory if you use C or C++ source code. because it helps to handle all '#' directives.<br/>
 Command:
 - cc -E -o yourScriptName.pp.c yourScriptName.c
-<img src="images/SStwo.png">
-![](images/SStwo.png)
+
+![SStwo](https://user-images.githubusercontent.com/61746939/79464194-64162f00-8017-11ea-93f1-1c3fd33a1667.PNG)
 
 ### STEP 02 - Compilation
 
