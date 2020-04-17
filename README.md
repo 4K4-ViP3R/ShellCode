@@ -69,6 +69,8 @@ This helps to convert assembly to binary.<br/>
 Command:
 - gcc -c yourScriptName.c --> (Produce yourScriptName.o file)
 
+![SSfive](https://user-images.githubusercontent.com/61746939/79535537-628e4a80-809b-11ea-9e80-8e5a466294c4.PNG)
+
 ### STEP 04 - Create executable file
 
 Command:
