@@ -75,3 +75,5 @@ Command:
 
 Command:
 - gcc -o yourFileName yourScriptName.o
+
+![SSsix](https://user-images.githubusercontent.com/61746939/79535654-aed98a80-809b-11ea-8a2d-97a02d6b7626.PNG)
