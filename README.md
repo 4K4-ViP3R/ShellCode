@@ -84,3 +84,16 @@ After creating your own binary file, disassemble it using any disassembly tool s
 
 - e.g., \x44\x78\x59\xe4\x49\x88\xec\x40\x21\xc0\x79\xc2\x23\x9d\x46\xe0\x23\x…
 
+##### Let’s create a program that executes your shellcode
+
+```javascript
+#include <stdio.h>
+
+unsigned char shellcode[] = \
+"\x55\x48\x89\xe5\x48\x83\xec\x30\x31\xc0\x89\xc2\x48\x8d\x75\xe0\x48\x8b\x3b\x0d\xe9\x..."
+int main()
+{
+	int (*ret)() = (int(*)())shellcode;
+	ret();
+}
+```
