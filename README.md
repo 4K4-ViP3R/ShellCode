@@ -77,3 +77,10 @@ Command:
 - gcc -o yourFileName yourScriptName.o
 
 ![SSsix](https://user-images.githubusercontent.com/61746939/79535654-aed98a80-809b-11ea-8a2d-97a02d6b7626.PNG)
+
+## Final Procedure
+
+After creating your own binary file, disassemble it using any disassembly tool such as Ghidra, Radare2, Objdump. After completing disassemble process, you can get the opcodes that need to create your own shellcode. These opcodes represent the same set of instructions related to the assembly language. Once getting the opcodes, need to convert them into a proper format that can be added as a string input to another program. You can concatenate the opcodes into a string and use \x to prepend each hex byte to get the string as below example.
+
+- e.g., \x44\x78\x59\xe4\x49\x88\xec\x40\x21\xc0\x79\xc2\x23\x9d\x46\xe0\x23\x…
+
